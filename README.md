@@ -1,1 +1,3 @@
 NEXT_PUBLIC_API_URL=https://bbm-server-hfq1.onrender.com/
+NEXT_PUBLIC_SUPABASE_URL=https://vmubcnhykffxjjfwsnsg.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_J9lpoUdxKc0UIwXfM0ZAjA_6F91P3Nj
