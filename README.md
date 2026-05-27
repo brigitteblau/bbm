@@ -1,0 +1,1 @@
+NEXT_PUBLIC_API_URL=https://bbm-server-hfq1.onrender.com/
