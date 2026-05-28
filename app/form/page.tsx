@@ -30,7 +30,7 @@ export default function ProtesisFormPage() {
     
  
     try {
-        const res = await fetch(`${apiUrl}/prosthesis/generate`, {
+        const res = await fetch("/api/prosthesis/generate", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
