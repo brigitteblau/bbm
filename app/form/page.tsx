@@ -93,7 +93,7 @@ export default function ProtesisFormPage() {
             className="bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3"
           >
             <option value="">Tamaño</option>
-            <option value="pequeño">Pequeño</option>
+            <option value="chico">Chico</option>
             <option value="mediano">Mediano</option>
             <option value="grande">Grande</option>
           </select>

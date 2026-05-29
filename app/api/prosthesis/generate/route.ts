@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     const { data: request, error: insertError } = await supabase
       .from("prosthesis_requests")
       .insert({
-        user_id: null,
+        user_id: "00000000-0000-0000-0000-000000000000",
         dog_name: payload.dog_name,
         dog_weight_kg: payload.dog_weight_kg,
         dog_breed: payload.dog_breed,
@@ -31,6 +31,7 @@ export async function POST(req: Request) {
       .single();
 
     if (insertError) {
+      console.log("Insert error:", insertError);
       return NextResponse.json({ error: insertError.message }, { status: 400 });
     }
 
