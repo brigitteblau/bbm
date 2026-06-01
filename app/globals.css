@@ -42,7 +42,7 @@ html, body {
 }
 /* NAVBAR */
 .navbar {
-  background:  #888888;
+  background:  #C5C1C1;
   border-bottom: 1px solid #444;
   height: 70px;
   display: flex;
@@ -124,7 +124,7 @@ html, body {
 }
 
 .hero-block {
-  background: #7a3a3a;
+  background: #A75B5B;
   height: 35vh;
   display: flex;
   align-items: center;
