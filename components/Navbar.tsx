@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <span className="navbar-logo">hunde</span>
+      <span className="navbar-logo">HUNDA</span>
       <div className="navbar-links">
         <a href="/help">Help</a>
         <a href="/contact">Contact Us</a>
