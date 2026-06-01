@@ -24,3 +24,162 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.navbar-logo {
+  font-size: 11px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 14px;
+}
+
+.navbar-links a {
+  font-size: 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #222;
+}
+
+/* HERO / VIDEO BLOCK */
+.hero-block {
+  background: #b56b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+}
+
+.hero-block .video-label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* CONTACT HERO */
+.contact-hero {
+  background: #b56b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 110px;
+}
+
+.contact-hero .dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #d4a0a0;
+  border: 2px solid #c08080;
+}
+
+.contact-info {
+  background: #b56b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* CONTENT BLOCKS (gray rounded rows) */
+.content-blocks {
+  background: #3b3d6b;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-block {
+  background: #d0d0d8;
+  border-radius: 20px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-block.faq {
+  background: #d0d0d8;
+}
+
+.content-block .faq-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* FOOTER */
+.footer {
+  background: #9b9baf;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-label {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+/* LANDING */
+.landing-section1 {
+  padding: 14px 12px 10px;
+  font-size: 11px;
+  color: #333;
+}
+
+.landing-hero {
+  background: #c9a0a0;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.demo-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
