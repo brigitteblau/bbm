@@ -6,15 +6,14 @@ export default function ContactPage() {
     <div style={{ width: "100%" }}>
       <Navbar />
       <div className="contact-hero">
-        <div className="dot" />
-        <div className="dot" />
-        <div className="dot" />
-      </div>
-      <div className="contact-info">
-        <span>INFO NUESTRA Y DE CONTACTO</span>
-      </div>
-      <div className="footer">
-        <span className="footer-label">FOOTER</span>
+        <div className="contact-dots">
+          <div className="dot" />
+          <div className="dot" />
+          <div className="dot" />
+        </div>
+        <div className="contact-info">
+          <span>INFO NUESTRA Y DE CONTACTO</span>
+        </div>
       </div>
     </div>
   );
