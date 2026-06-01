@@ -34,7 +34,10 @@ body {
   font-family: Arial, sans-serif;
   background: #fff;
 }
-
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
 /* NAVBAR */
 .navbar {
   background: #fff;
@@ -71,10 +74,10 @@ body {
 /* HERO / VIDEO BLOCK */
 .hero-block {
   background: #b56b6b;
+  height: calc(100vh - 28px);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 110px;
 }
 
 .hero-block .video-label {
@@ -166,13 +169,12 @@ body {
 
 .landing-hero {
   background: #c9a0a0;
-  height: 80px;
+  height: calc(100vh - 28px); 
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 8px;
 }
-
 .demo-btn {
   background: #fff;
   border: 1px solid #ccc;

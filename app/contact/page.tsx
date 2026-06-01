@@ -3,7 +3,7 @@ import "@/app/globals.css";
 
 export default function ContactPage() {
   return (
-    <div style={{ maxWidth: 420, margin: "0 auto" }}>
+    <div style={{ width: "100%" }}>
       <Navbar />
       <div className="contact-hero">
         <div className="dot" />
