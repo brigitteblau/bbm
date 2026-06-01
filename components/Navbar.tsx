@@ -3,10 +3,10 @@ export default function Navbar() {
     <nav className="navbar">
       <span className="navbar-logo">HUNDA</span>
       <div className="navbar-links">
-        <a href="/help">Help</a>
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
         <a href="/contact">Contact Us</a>
-        <a href="/landing">Catalog</a>
-        <a href="#">Catalog</a>
+        <a href="/help">Help</a>
       </div>
     </nav>
   );
