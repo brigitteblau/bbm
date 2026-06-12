@@ -40,36 +40,7 @@ html, body {
   width: 100%;
   min-height: 100vh;
 }
-/* NAVBAR */
-.navbar {
-  background:  #C5C1C1;
-  border-bottom: 1px solid #444;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 24px;
-  position: relative;
-}
 
-.navbar-logo {
-  font-size: 18px;
-  font-weight: 700;
-  color: #111;
-  position: absolute;
-  left: 24px;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 32px;
-}
-
-.navbar-links a {
-  font-size: 13px;
-  color:#111;
-  text-decoration: none;
-}
 
 /* LANDING */
 .landing-hero {
