@@ -45,7 +45,7 @@ html, body {
 /* LANDING */
 .landing-hero {
   background: #6b3a3a;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 60px);  /* ← cambiar aquí */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,7 +109,7 @@ html, body {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 60px);  
 }
 
 .contact-hero .dot {
