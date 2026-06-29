@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  @apply font-sans;
 }
 
 html, body {
@@ -26,33 +26,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* LANDING */
-.landing-hero {
-  background: #6b3a3a;
-  height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-}
 
-.landing-section1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.demo-btn {
-  align-self: flex-end;
-  margin-bottom: 80px;
-  background: #222;
-  border: 1px solid #555;
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
-}
 
 /* FOOTER */
 .footer {

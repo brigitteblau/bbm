@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#ADAAAF] px-16 py-12">
-      <div className="flex gap-16 items-start">
-
+    <footer className="w-full bg-[#ADAAAF] px-16 py-8">
+      <div className="flex flex-col gap-4">
+       <div className="flex gap-24 items-start">
         {/* Logo + tagline */}
         <div className="flex flex-col gap-3 max-w-[220px]">
           <span className="text-[22px] font-bold text-white">hunda.</span>
@@ -43,7 +43,8 @@ export default function Footer() {
           <p className="text-[13px] text-white">betterbm26@gmail.com</p>
           <p className="text-[13px] text-white">+54 9 11 7366 7824</p>
         </div>
-      <div className="flex flex-col items-end gap-4 ml-auto">
+        </div>
+        <div className="flex flex-col items-end gap-2 ml-auto self-end">
         <div className="flex gap-3">
           <a href="#"><img src="/tiktok (2).png" width={36} height={36} /></a>
           <a href="#"><img src="/instagram.png" width={36} height={36} /></a>
