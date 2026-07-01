@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { LoginForm } from "./login-form";
 import { ErrorAlert } from "./error-alert";
+
 
 export default async function LoginPage({
   searchParams,
@@ -13,29 +13,52 @@ export default async function LoginPage({
   const sp = (await searchParams) ?? {};
 
   const supabase = await createSupabaseServerClient();
+
   const {
     data: { user },
   } = await supabase.auth.getUser();
+
   if (user) redirect("/home");
 
   return (
-    <main className="flex-1 bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50">
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-16">
-        <header className="flex items-center justify-between">
-          <Link href="/" className="text-sm font-semibold tracking-tight">
-            BBM
-          </Link>
-          <Link
-            href="/"
-            className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-          >
-            Volver
-          </Link>
-        </header>
+    <main className="flex min-h-screen items-center justify-center bg-[#D9D9D9] px-6 py-6">
 
-        {typeof sp.error === "string" ? <ErrorAlert /> : null}
-        <LoginForm />
-      </div>
+      <section
+  className="
+    relative
+    mx-auto
+    flex
+    w-full
+    max-w-[520px]
+    flex-col
+    rounded-[28px]
+    bg-white
+    px-10
+    py-8
+    shadow-[0_4px_20px_rgba(0,0,0,0.18)]
+  "
+>
+        <h2 className="absolute right-8 top-6 text-lg font-bold">
+          hunda.
+        </h2>
+
+        <h1 className="mt-2 text-center text-4xl font-black">
+          LOGIN
+        </h1>
+
+        {typeof sp.error === "string" && <ErrorAlert />}
+
+        <div className="mt-10 flex justify-center">
+          <LoginForm />
+        </div>
+
+        <p className="mt-auto pb-4 text-center text-sm text-zinc-600">
+          ¿Sos nuevo?{" "}
+          <span className="cursor-pointer font-semibold underline">
+            Registrate
+          </span>
+        </p>
+      </section>
     </main>
   );
 }
